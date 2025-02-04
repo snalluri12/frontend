@@ -8,7 +8,7 @@ let cartitems = document.getElementById("cart-items");
 let cartCount = document.getElementById("cart-count"); 
 
 // Fetch products from the backend
-fetch("http://localhost:4242/products")
+fetch("https://cozy-threads-backend.onrender.com/products")
   .then(response => response.json())
   .then(products => {
     const productList = document.getElementById("product-list");
