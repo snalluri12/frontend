@@ -6,7 +6,7 @@ if (paymentIntentId) {
   fetch(`https://cozy-threads-backend.onrender.com/payment-status?payment_intent=${paymentIntentId}`)
     .then(response => {
       if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
+        throw new Error(`HTTP error: ${response.status}`);
       }
       return response.json();
     })
@@ -15,7 +15,7 @@ if (paymentIntentId) {
 
       const messageElement = document.querySelector("#payment-message"); 
       if (!messageElement) {
-        console.error("❌ Error: Element with id 'payment-message' not found.");
+        console.error("Error: Element with id 'payment-message' not found.");
         return;
       }
 
@@ -28,11 +28,11 @@ if (paymentIntentId) {
       localStorage.removeItem("cart");
     })
     .catch(error => {
-      console.error("❌ Error fetching payment status:", error);
-      document.querySelector("#payment-message").textContent = "⚠️ Error fetching payment details. Please try again.";
+      console.error("Error fetching payment status:", error);
+      document.querySelector("#payment-message").textContent = "Error fetching payment details. Please try again.";
     });
 } else {
-  console.error("❌ No payment_intent found in URL.");
+  console.error("No payment_intent found in URL.");
 }
 
 function displayOrder(items, totalPrice){
