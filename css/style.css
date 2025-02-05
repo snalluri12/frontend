@@ -140,7 +140,7 @@ body {
     cursor: pointer;
     border-radius: 5px;
     width: 200px;
-    margin-left: 5000px;
+    
   }
   
   /* Cart Dropdown */
@@ -175,6 +175,7 @@ body {
     padding: 5px 10px;
     cursor: pointer;
     font-size: 14px;
+    margin-left: 20px;
   }
 
   
