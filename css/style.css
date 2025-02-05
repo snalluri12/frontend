@@ -19,7 +19,7 @@ body {
     margin-top: 20px;
   }
   
-  /* 🛍️ Product List */
+  /*Product List */
   .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -58,7 +58,7 @@ body {
     background: #e63946;
   }
   
-  /* 🛒 Cart */
+  /* Cart */
   .cart-container {
     background: transparent; 
     padding: 0; 
@@ -81,6 +81,7 @@ body {
     padding: 10px 14px;
     cursor: pointer;
     border-radius: 5px;
+    margin-left: 20px;
   }
   
   .cart-item button:hover {
@@ -120,11 +121,11 @@ body {
 
   .navbar {
     display: flex;
-    justify-content: flex-end; /* Moves cart button to the right */
+    justify-content: flex-end;
     align-items: center;
     padding: 15px;
     background-color: #f8f9fa;
-    position: fixed; /* Fixes navbar to the top */
+    position: fixed; 
     top: 0;
     right: 0;
     left: 1000;
