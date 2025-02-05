@@ -37,7 +37,7 @@ function addToCart(id, name, price) {
   } else {
     cart.push({ id, name, price, quantity: 1 });
   }
-  localStorage.setItem("cart", JSON.stringify(cart)); 
+  ///localStorage.setItem("cart", JSON.stringify(cart)); 
   updateCartUI();
   listCartItems()
 }
@@ -73,7 +73,7 @@ function removeFromCart(id) {
   else if(cart[item_index].quantity > 1){
     cart[item_index].quantity -= 1; 
   }
-  localStorage.setItem("cart", JSON.stringify(cart)); 
+  //localStorage.setItem("cart", JSON.stringify(cart)); 
   updateCartUI();
   listCartItems();
 }
@@ -102,7 +102,7 @@ async function initializePayment() {
       return;
   }
 
-  localStorage.setItem("cart", JSON.stringify(cart));
+  //localStorage.setItem("cart", JSON.stringify(cart));
 
   const response = await fetch("https://cozy-threads-backend.onrender.com/create-payment-intent", {
       method: "POST",
