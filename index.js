@@ -104,7 +104,7 @@ async function initializePayment() {
 
   localStorage.setItem("cart", JSON.stringify(cart));
 
-  const response = await fetch("http://localhost:4242/create-payment-intent", {
+  const response = await fetch("https://cozy-threads-backend.onrender.com/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ cart })
