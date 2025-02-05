@@ -81,7 +81,6 @@ body {
     padding: 10px 14px;
     cursor: pointer;
     border-radius: 5px;
-    margin-left: 200px;
   }
   
   .cart-item button:hover {
@@ -141,7 +140,8 @@ body {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    width: 200px
+    width: 200px;
+    margin-left: 25px;
   }
   
   /* Cart Dropdown */
