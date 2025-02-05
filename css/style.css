@@ -126,9 +126,7 @@ body {
     background-color: #f8f9fa;
     position: fixed; 
     top: 0;
-    right: 0;
-    left: 1000;
-    width:15%;
+    width:auto;
   }
   
   /* Cart Button */
@@ -141,7 +139,7 @@ body {
     cursor: pointer;
     border-radius: 5px;
     width: 200px;
-    margin-left: 1000px;
+    margin-left: 20px;
   }
   
   /* Cart Dropdown */
