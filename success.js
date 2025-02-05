@@ -3,7 +3,7 @@ const paymentIntentId = urlParams.get("payment_intent");
 const purchasedItems = JSON.parse(localStorage.getItem("cart")) || [];
 
 if (paymentIntentId) {
-  fetch(`http://localhost:4242/payment-status?payment_intent=${paymentIntentId}`)
+  fetch(`https://cozy-threads-backend.onrender.com/payment-status?payment_intent=${paymentIntentId}`)
     .then(response => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
